@@ -1,19 +1,19 @@
 // C++ program to print map of India
 #include <iostream>
 using namespace std;
- 
+
 int main()
 {
     int a = 10, b = 0, c = 10;
- 
+
     // The encoded string after removing first 31 characters
     // Its individual characters determine how many spaces
     // or exclamation marks to draw consecutively.
-    char* str = "TFy!QJu ROo TNn(ROo)SLq SLq ULo+UHs UJq "
+    char *str = "TFy!QJu ROo TNn(ROo)SLq SLq ULo+UHs UJq "
                 "TNn*RPn/QPbEWS_JSWQAIJO^NBELPeHBFHT}TnALVlBL"
                 "OFAkHFOuFETpHCStHAUFAgcEAelclcn^r^r\\tZvYxXyT|S~Pn SPm "
                 "SOn TNn ULo0ULo#ULo-WHq!WFs XDt!";
- 
+
     while (a != 0)
     {
         // read each character of encoded string
@@ -23,8 +23,8 @@ int main()
             if (++c == 90) // 'Z' is 90 in ascii
             {
                 // reset c to 10 when the end of line is reached
-                c = 10;        // '\n' is 10 in ascii
- 
+                c = 10; // '\n' is 10 in ascii
+
                 // print newline
                 putchar('\n'); // or putchar(c);
             }
@@ -39,6 +39,6 @@ int main()
             }
         }
     }
- 
+    printf("Hello!");
     return 0;
 }
